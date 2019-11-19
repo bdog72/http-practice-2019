@@ -1,12 +1,20 @@
-console.log(123);
+// console.log(123);
 
-const div = document.createElement("div");
-const h1 = document.createElement("h1");
+const customers = ["Bozo", "Molly", "Josie"];
 
-h1.classList.add("bozo");
-h1.innerHTML = `<h1>Bozo</h1>`;
+const activeCustomers = ["Bozo", "Molly"];
 
-div.style.background = "blue";
+const inactiveCustomers = _.difference(customers, activeCustomers);
 
-document.body.append(div);
-div.append(h1);
+console.log(inactiveCustomers);
+
+// const div = document.createElement("div");
+// const h1 = document.createElement("h1");
+
+// h1.classList.add("bozo");
+// h1.innerHTML = `<h1>Bozo</h1>`;
+
+// div.style.background = "blue";
+
+// document.body.append(div);
+// div.append(h1);
